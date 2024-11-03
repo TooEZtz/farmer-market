@@ -1,5 +1,5 @@
 {
-  "homepage": "https://tooeztz.github.io/farmer-market-main",
+  "homepage": "https://tooeztz.github.io/farmer-market",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

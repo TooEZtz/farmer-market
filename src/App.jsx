@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider, AuthContext } from './context/AuthContext';
 import { CartProvider } from './context/CartContext';
 
@@ -18,7 +18,7 @@ function App() {
   return (
     <AuthProvider>
       <CartProvider>
-        <Router>
+        <HashRouter>
           <Navbar />
           <div className="container">
             <Routes>
@@ -67,7 +67,7 @@ function App() {
             </Routes>
           </div>
           <Footer />
-        </Router>
+        </HashRouter>
       </CartProvider>
     </AuthProvider>
   );
